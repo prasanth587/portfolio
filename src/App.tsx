@@ -152,10 +152,10 @@ export default function App() {
       >
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-gray-400 mb-4 text-sm sm:text-base">
-            © 2024 PrasanthMudaliyar. All rights reserved.
+            © 2024 Prasanth Mudaliyar. All rights reserved.
           </p>
           <p className="text-xs sm:text-sm text-gray-500 leading-relaxed">
-            Built with React, TypeScript, and lots of ☕ | Try typing "hello" for a surprise! 
+            Built with React, TypeScript, and lots of ☕ | Try typing "hello" for a surprise! | Type "admin" to access contact submissions
           </p>
         </div>
       </motion.footer>

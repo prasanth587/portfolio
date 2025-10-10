@@ -137,7 +137,49 @@ export function AboutSection() {
             >
               <Button
                 onClick={() => {
-                  const resumeUrl = '/prasanth.pdf'; // Place file in /public
+                  // TODO: Replace with actual resume PDF URL when available
+                  const resumeUrl = '/resume/Prasanth_Mudaliyar_Resume.pdf'; // You'll add your PDF file here
+                  
+                  // For now, show a message that resume will be available soon
+                  if (resumeUrl === '/resume/Prasanth_Mudaliyar_Resume.pdf') {
+                    // Create a temporary notification
+                    const notification = document.createElement('div');
+                    notification.innerHTML = `
+                      <div style="
+                        position: fixed;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background: rgba(0, 0, 0, 0.95);
+                        color: white;
+                        padding: 24px 32px;
+                        border-radius: 16px;
+                        backdrop-filter: blur(20px);
+                        border: 1px solid rgba(0, 212, 255, 0.3);
+                        z-index: 9999;
+                        font-size: 16px;
+                        text-align: center;
+                        box-shadow: 0 0 40px rgba(0, 212, 255, 0.3);
+                        max-width: 90vw;
+                      ">
+                        <div style="font-size: 48px; margin-bottom: 16px;">📄</div>
+                        <div style="font-weight: 600; margin-bottom: 8px;">Resume Coming Soon!</div>
+                        <div style="color: #00d4ff; font-size: 14px;">I'll upload my latest resume PDF in the next update.</div>
+                        <div style="margin-top: 16px; font-size: 12px; color: #888;">This notification will close in 4 seconds...</div>
+                      </div>
+                    `;
+                    document.body.appendChild(notification);
+                    
+                    // Remove notification after 4 seconds
+                    setTimeout(() => {
+                      if (document.body.contains(notification)) {
+                        document.body.removeChild(notification);
+                      }
+                    }, 4000);
+                    return;
+                  }
+                  
+                  // When you add your actual resume, this will download it
                   const link = document.createElement('a');
                   link.href = resumeUrl;
                   link.download = 'Prasanth_Mudaliyar_Resume.pdf';

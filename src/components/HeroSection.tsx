@@ -165,7 +165,7 @@ export function HeroSection() {
             // When you add your actual resume, this will download it
             const link = document.createElement('a');
             link.href = resumeUrl;
-            link.download = '/public/prasanth.pdf'; // Place file in /public
+            link.download = 'Prasanth_Mudaliyar_Resume.pdf';
             link.target = '_blank';
             document.body.appendChild(link);
             link.click();

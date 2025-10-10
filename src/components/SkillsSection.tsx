@@ -268,8 +268,8 @@ export function SkillsSection() {
           
           <div className="grid sm:grid-cols-3 gap-4 sm:gap-6">
             {[
-              { number: "100+", label: "Users Served", icon: "👥" },
-              { number: "50+", label: "Projects Completed", icon: "🚀" },
+              { number: "500+", label: "Users Served", icon: "👥" },
+              { number: "10+", label: "Projects Completed", icon: "🚀" },
               { number: "40%", label: "Efficiency Improvement", icon: "📈" }
             ].map((stat, index) => (
               <motion.div

@@ -78,24 +78,29 @@ export function ContactSection() {
       icon: <MapPin className="h-6 w-6" />,
       label: "Location",
       value: "Tamilnadu, Chennai - Kavangarai",
-      link: "https://maps.google.com"
+      
     }
   ];
 
   const socialLinks = [
     {
-      icon: <Github className="h-6 w-6" />,
+      icon: <Github className="h-6 w-6" />, 
       label: "GitHub",
       username: "@prasanthmudaliyar",
       link: "https://github.com/prasanth587"
     },
-   
+    {
+      icon: <Linkedin className="h-6 w-6" />,
+      label: "LinkedIn",
+      username: "prasanth-mudaliyar",
+      link: "www.linkedin.com/in/prasanth-mudaliyar-89574a282"
+    },
      {
       icon: <Instagram className="h-6 w-6" />,
       label: "Instagram",
       username: "__mudaliyar_",
       link: "https://www.instagram.com/____mudaliyar_?igsh=MW4yaXpnNmZjN2NzZA=="
-    }
+    },
   ];
 
   return (
@@ -272,7 +277,7 @@ export function ContactSection() {
               <div className="space-y-3 text-sm">
                 <div className="flex items-center gap-2 text-gray-300">
                   <span className="text-blue-400">•</span>
-                  <span>Custom Web Applications</span>
+                  <span>Custom Web Application</span>
                 </div>
                 <div className="flex items-center gap-2 text-gray-300">
                   <span className="text-green-400">•</span>
